@@ -12,7 +12,7 @@ export const NoteCard: React.FC<Props> = ({ note }) => {
   return (
     <Card
       as={Link}
-      to={`/${id}`}
+      to={`/markdown-note/${id}`}
       className={"h-100 text-reset text-decoration-none card"}
     >
       <Card.Body>
