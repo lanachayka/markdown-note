@@ -71,7 +71,7 @@ function App() {
     <Container className="my-4">
       <Routes>
         <Route
-          path="/"
+          path="/markdown-note"
           key="/"
           element={
             <NoteList
@@ -83,7 +83,7 @@ function App() {
           }
         />
         <Route
-          path="/new"
+          path="/markdown-note/new"
           key="/new"
           element={
             <NewNote
@@ -94,13 +94,13 @@ function App() {
           }
         />
         <Route
-          path="/:id"
+          path="/markdown-note/:id"
           key="/:id"
           element={<NoteLayout notes={notesWithTags} />}
         >
           <Route index element={<Note onDelete={onDeleteNote} />} />
           <Route
-            path="edit"
+            path="/markdown-note/edit"
             key="edit"
             element={
               <EditNote
@@ -111,7 +111,7 @@ function App() {
             }
           />
         </Route>
-        <Route path="*" key="*" element={<Navigate to="/" />} />
+        <Route path="*" key="*" element={<Navigate to="/markdown-note" />} />
       </Routes>
     </Container>
   );
