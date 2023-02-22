@@ -8,6 +8,6 @@ type Props = {
 export const NoteLayout: React.FC<Props> = ({ notes }) => {
   const { id } = useParams();
   const note = notes.find((note) => note.id === id);
-  if (note == null) return <Navigate to="/" replace />;
+  if (note == null) return <Navigate to="/markdown-note" replace />;
   return <Outlet context={note} />;
 };
