@@ -20,7 +20,7 @@ export const Note: React.FC<Props> = ({ onDelete }) => {
         </Col>
         <Col xs="auto">
           <Stack gap={2} direction="horizontal">
-            <Link to={`/${id}/edit`}>
+            <Link to={`/markdown-note/${id}/edit`}>
               <Button type="button" variant="primary">
                 Edit
               </Button>
@@ -35,7 +35,7 @@ export const Note: React.FC<Props> = ({ onDelete }) => {
             >
               Delete
             </Button>
-            <Link to="/">
+            <Link to="/markdown-note">
               <Button type="button" variant="outline-secondary">
                 Back
               </Button>
