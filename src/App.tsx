@@ -100,7 +100,7 @@ function App() {
         >
           <Route index element={<Note onDelete={onDeleteNote} />} />
           <Route
-            path="/markdown-note/edit"
+            path="edit"
             key="edit"
             element={
               <EditNote
