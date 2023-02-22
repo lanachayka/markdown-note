@@ -49,7 +49,7 @@ export const NoteList: React.FC<Props> = ({
         </Col>
         <Col xs="auto">
           <Stack gap={2} direction="horizontal">
-            <Link to="/new">
+            <Link to="/markdown-note/new">
               <Button type="button" variant="primary">
                 Create
               </Button>
